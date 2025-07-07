@@ -1,14 +1,14 @@
 'use client';
 import Navbar from '@/app/components/Navbar'
 import StockCard from '@/app/components/StockCard'
-import { useEffect, useState } from 'react'
-import { fetchStockData } from '@/app/lib/api'
+import { useState } from 'react'
+// import { fetchStockData } from '@/app/lib/api'
 import { StockData } from '@/app/types/stock'
 import { stockData } from './constants';
 
 export default function Home() {
-  const dummyStockData = stockData;
-  const [stocks, setStocks] = useState<StockData[]>(dummyStockData)
+  const stocks = stockData;
+  // const [stocks, setStocks] = useState<StockData[]>(dummyStockData)
 
   // useEffect(() => {
   //   const fetchData = async () => {
@@ -28,8 +28,6 @@ export default function Home() {
   //   }
   //   fetchData()
   // }, [])
-
-  console.log(stocks, "stocks")
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-950">

@@ -1,13 +1,12 @@
 'use client';
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
 
 export default function Navbar() {
-  const [darkMode, setDarkMode] = useState(false)
+  // const [darkMode, setDarkMode] = useState(false)
 
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', darkMode)
-  }, [darkMode])
+  // useEffect(() => {
+  //   document.documentElement.classList.toggle('dark', darkMode)
+  // }, [darkMode])
 
   return (
     <nav className="flex items-center justify-between p-4 bg-white dark:bg-gray-800 shadow">
