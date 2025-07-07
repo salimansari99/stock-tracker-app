@@ -1,9 +1,9 @@
 'use client';
 import Navbar from '@/app/components/Navbar'
 import StockCard from '@/app/components/StockCard'
-import { useState } from 'react'
+// import { useState } from 'react'
 // import { fetchStockData } from '@/app/lib/api'
-import { StockData } from '@/app/types/stock'
+// import { StockData } from '@/app/types/stock'
 import { stockData } from './constants';
 
 export default function Home() {
